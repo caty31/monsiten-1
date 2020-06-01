@@ -1,0 +1,139 @@
+@media all and (max-width:480px){
+    .conteneur{
+        width: 100%;
+    }
+    .image{
+        float: none;
+    }
+    #bible-3{
+        width: 100px;
+    }
+}
+/* le menu principale*/
+
+nav ul{
+    padding: 0px;
+    text-align: justify;
+    list-style-type: none;
+    /* display: inline-block;*/
+    height: 50px;
+    border-radius: 15px;
+
+}
+nav a {
+    display:inline-block;
+    width: 100%;
+    padding:10px;
+    line-height: 25px;
+    background-color:rgb(40, 122, 115);
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+}
+nav a:hover{
+    color: rgb(14, 12, 12);
+}
+nav li{
+    float: left;   
+    border-radius: 15px;
+    padding-right: 2em;
+}
+
+
+/*le code du body de chaque page*/
+body{
+    background-color:rgb(102, 168, 160);
+    animation-name: couleur;
+    animation-duration: 10s;
+}
+
+
+@keyframes couleur{
+    from{
+        background-color: rgb(144, 205, 230);
+    }
+    to{
+        background-color: blueviolets;
+    }
+}
+
+.conteneur{
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+
+@keyframes fondu{
+    25%{background-image:url(../resources/cropped-une-fne-2016.jpg);}
+    50%{background-image: url(../resources/johnson-ndukwe-remy-bayle1.jpg);}
+    75%{background-image: url(../resources/johnson-ndukwe-remy-bayle_50.jpg);}
+    100%{background-image: url(../resources/téléchargement.jpg);}
+}
+.d2{
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #777777;
+    background-size: contain;
+    animation:fondu 15s ease-in-out infinite both;
+}
+.d2 :hover{
+    animation-play-state: paused;
+}
+
+.image{
+    float: right;
+    max-width: 100%
+
+}
+
+textarea{
+    float: right;
+    width: 300px;
+    height: auto;
+    background-color:white;
+    border-color: black;
+}
+fieldset{
+    border-radius: 10px;
+}
+
+#formulaire{
+    float: left;
+    max-width: 370px;
+    background-color: rgb(139, 211, 121);
+    border-radius: 10px;
+
+}
+#carte{
+
+    float: right;
+    width:70%;
+    height:450px;
+    position: relative;
+
+}
+
+dons{
+    padding-left: 10px;
+    text-align: justify;
+    float: right;
+    width:auto;
+    height:250px;
+    position: absolute;
+}
+#body-dons{
+    background-image:url(../resources/dons.jpg);
+    background-size: cover; 
+
+
+}
+
+
+
+
+
